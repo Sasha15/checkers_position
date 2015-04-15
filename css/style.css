@@ -1,0 +1,113 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	background: #ded5ff;
+	}
+.wrap{
+	width:40vw;
+	height: 40vw;
+	background: grey;
+	position: relative;
+	margin: auto;
+	margin-top: 25px;
+	-webkit-box-shadow: 3px 3px 0 rgba(128,112,105,0.5);
+	-moz-box-shadow: 3px 3px 0 rgba(128,112,105,0.5);
+	box-shadow: 3px 3px 0 rgba(128,112,105,0.5);
+}
+.chess{
+	width: 98%;
+	height: 98%;
+	border:2px solid black;
+	position:absolute;
+	margin:auto;
+	margin-top: 1%;
+	margin-left: 1%;
+	background:white;
+}
+.row{
+	position: relative;
+	width:100%;
+	height: 12.5%;
+}
+.row div{
+	position:absolute;
+}
+[class*="field"]{
+	position:absolute;
+	background: black;
+	width: 12.5%;
+	height: 100%;
+}
+.row:nth-child(-n+3) [class*="field"]:after{
+	content: "";
+	margin: 8% auto;
+	display: block;
+	width: 80%;
+	height:80%;
+	border-radius: 50%;
+	background: white;
+	box-shadow: 1px 2px 0 rgba(128,112,105,1);
+}
+.row:nth-child(n+6) [class*="field"]:after{
+	content: "";
+	margin: 8% auto;
+	display: block;
+	width: 80%;
+	height:80%;
+	border-radius: 50%;
+	background: #cd4934;
+	box-shadow: 1px 2px 0 rgb(128, 49, 22);
+}
+.field1{
+	right:0;
+}
+.pawn1{
+	right:5px;
+}
+.field2{
+	right:25%;
+}
+.pawn2{
+	right:105px;
+}
+.field3{
+	right:50%;
+}
+.pawn3{
+	right:205px;
+}
+.field4{
+	right:75%
+}
+.pawn4{
+	right:305px;
+}
+.field5{
+	right:12.5%;
+}
+.pawn5{
+	right: 55px;
+}
+.field6{
+	right:37.5%;
+}
+.pawn6{
+	right:155px;
+}
+.field7{
+	right: 62.5%;
+}
+.pawn7{
+	right:255px;
+}
+.field8{
+	right:87.5%;
+}
+.pawn8{
+	right:355px;
+}
+
